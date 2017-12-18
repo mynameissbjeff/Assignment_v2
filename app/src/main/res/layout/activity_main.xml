@@ -4,27 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     tools:context="my.edu.taruc.lab22profile.MainActivity">
-
-    <Button
-        android:id="@+id/buttonUpdate"
-        android:layout_width="171dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:onClick="SelectMode"
-        android:text="@string/start"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        tools:text="@string/start" />
 
     <TextView
         android:id="@+id/textViewTitle"
@@ -42,5 +23,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMultiplayer"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_dark"
+        android:onClick="SelectMode"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:srcCompat="@drawable/multiplayer_pic" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPratice"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/background_dark"
+        android:backgroundTint="@android:color/background_dark"
+        android:onClick="SelectMode"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonMultiplayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        app:srcCompat="@drawable/pratice_pic" />
+
+    <TextView
+        android:id="@+id/textViewPratice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/pratice"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMultiplayer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPratice"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <TextView
+        android:id="@+id/textViewMultiplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/multiplayer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMultiplayer"
+        app:layout_constraintVertical_bias="0.111" />
 
 </android.support.constraint.ConstraintLayout>

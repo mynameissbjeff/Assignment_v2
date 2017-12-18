@@ -4,73 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context="my.edu.taruc.lab22profile.ModeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectmode_pic" />
 
     <Button
         android:id="@+id/buttonAdd"
-        android:layout_width="174dp"
+        android:layout_width="148dp"
         android:layout_height="96dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="Practicemode"
         android:shadowColor="@color/colorPrimary"
-        android:text="@string/addition"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/buttonMix"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/addition" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonSub"
-        android:layout_width="175dp"
+        android:layout_width="143dp"
         android:layout_height="98dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/subtraction"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:onClick="Practicemode"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/buttonMix"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/subtraction" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonMul"
-        android:layout_width="178dp"
-        android:layout_height="102dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="144dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="60dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="@string/multiplication"
+        android:background="@android:color/transparent"
+        android:onClick="Practicemode"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonMix"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="@string/multiplication" />
+        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonDiv"
-        android:layout_width="173dp"
+        android:layout_width="146dp"
         android:layout_height="99dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="56dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="@string/division"
+        android:background="@android:color/transparent"
+        android:onClick="Practicemode"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonMix"
-        tools:text="@string/division" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonMix" />
 
     <Button
         android:id="@+id/buttonMix"
-        android:layout_width="166dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="64dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="@string/mix"
+        android:background="@android:color/transparent"
+        android:onClick="Practicemode"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/mix" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
