@@ -7,4 +7,97 @@
     android:background="@color/lightblue"
     tools:context="my.edu.taruc.lab22profile.PracticeActivity">
 
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="245dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/yellow"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="71dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonC"
+        app:layout_constraintEnd_toStartOf="@+id/buttonB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="22dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginTop="71dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuestion" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginStart="42dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonD"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTotNum"
+        android:layout_width="22dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="/12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuest" />
+
+    <TextView
+        android:id="@+id/textViewQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNum"
+        android:layout_width="15dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/textViewTotNum"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuest" />
 </android.support.constraint.ConstraintLayout>

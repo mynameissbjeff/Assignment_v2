@@ -21,9 +21,6 @@
     <string name="mix">Mix</string>
     <string name="pratice">Pratice</string>
     <string name="multiplayer">Multiplayer</string>
-    <color name="blue">#42A5F5</color>
-    <color name="yellow">#FFF176</color>
-    <color name="lightblue">#E1F5FE</color>
 
 
 </resources>
