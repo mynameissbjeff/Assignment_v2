@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightblue"
+    android:background="#c2ecff"
     tools:context="my.edu.taruc.lab22profile.PracticeActivity">
 
     <TextView
@@ -31,7 +31,7 @@
         android:layout_marginEnd="61dp"
         android:layout_marginStart="42dp"
         android:layout_marginTop="71dp"
-        android:text="Button"
+        android:background="@android:color/holo_red_light"
         app:layout_constraintBottom_toTopOf="@+id/buttonC"
         app:layout_constraintEnd_toStartOf="@+id/buttonB"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="49dp"
         android:layout_marginTop="22dp"
-        android:text="Button"
+        android:background="@android:color/holo_green_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonB" />
@@ -55,7 +55,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="49dp"
         android:layout_marginTop="71dp"
-        android:text="Button"
+        android:background="#fff645"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewQuestion" />
 
@@ -66,7 +66,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="61dp"
         android:layout_marginStart="42dp"
-        android:text="Button"
+        android:background="@android:color/holo_blue_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonD"
         app:layout_constraintStart_toStartOf="parent" />

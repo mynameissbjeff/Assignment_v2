@@ -21,6 +21,7 @@
     <string name="mix">Mix</string>
     <string name="pratice">Pratice</string>
     <string name="multiplayer">Multiplayer</string>
+    <string name="title_activity_multiplayer">MultiplayerActivity</string>
 
 
 </resources>
