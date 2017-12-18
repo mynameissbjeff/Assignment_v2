@@ -32,6 +32,7 @@
         android:layout_marginStart="42dp"
         android:layout_marginTop="71dp"
         android:background="@android:color/holo_red_light"
+        android:onClick="buttonAans"
         app:layout_constraintBottom_toTopOf="@+id/buttonC"
         app:layout_constraintEnd_toStartOf="@+id/buttonB"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,9 +94,8 @@
 
     <TextView
         android:id="@+id/textViewNum"
-        android:layout_width="15dp"
+        android:layout_width="25dp"
         android:layout_height="19dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginTop="8dp"
         android:text="0"
         app:layout_constraintEnd_toStartOf="@+id/textViewTotNum"
