@@ -46,6 +46,7 @@
         android:layout_marginEnd="49dp"
         android:layout_marginTop="22dp"
         android:background="@android:color/holo_green_light"
+        android:onClick="buttonAans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonB" />
@@ -57,6 +58,7 @@
         android:layout_marginEnd="49dp"
         android:layout_marginTop="71dp"
         android:background="#fff645"
+        android:onClick="buttonAans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewQuestion" />
 
@@ -68,6 +70,7 @@
         android:layout_marginEnd="61dp"
         android:layout_marginStart="42dp"
         android:background="@android:color/holo_blue_dark"
+        android:onClick="buttonAans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonD"
         app:layout_constraintStart_toStartOf="parent" />
