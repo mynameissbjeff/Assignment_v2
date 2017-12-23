@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_PROFILE_UPDATE = 1;
     private static final int REQUEST_SELECT_MODE = 1;
+    private static final int REQUEST_CHALLENGE = 1;
     public static final String PROFILE_NAME = "my.edu.taruc.lab22profile.name";
     public static final String PROFILE_EMAIL = "my.edu.taruc.lab22profile.email";
 
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
     public void SelectMode(View view){
         Intent intent = new Intent(this,ModeActivity.class);
         startActivityForResult(intent, REQUEST_SELECT_MODE);
+    }
+
+    public void Chanllenge(View view){
+        Intent intent = new Intent(this,ChallengeActivity.class);
+        startActivityForResult(intent, REQUEST_CHALLENGE);
     }
 
     @Override

@@ -1,11 +1,13 @@
 package my.edu.taruc.lab22profile;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.util.Random;
@@ -21,10 +23,14 @@ public class PracticeActivity extends AppCompatActivity {
     public Button buttonC;
     public Button buttonD;
     public int countNum = 1;
+    public float actualAns;
+    public float selectAns;
+    public int TotalCorrect = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         setContentView(R.layout.activity_practice);
 
         textViewNum = (TextView)findViewById(R.id.textViewNum);
@@ -82,25 +88,23 @@ public class PracticeActivity extends AppCompatActivity {
     }
 
     public void setAnswer(int ansnum,float ans){
-        //buttonA.setText("A. "+randomAns(0,30));
-        //buttonB.setText("B. "+randomAns(0,30));
-        //buttonC.setText("C. "+randomAns(0,30));
-        //buttonD.setText("D. "+randomAns(0,30));
-        buttonA.setText("A. "+randomAns((int)ans-10,(int)ans+10));
-        buttonB.setText("B. "+randomAns((int)ans-10,(int)ans+10));
-        buttonC.setText("C. "+randomAns((int)ans-10,(int)ans+10));
-        buttonD.setText("D. "+randomAns((int)ans-10,(int)ans+10));
+        buttonA.setText(""+randomAns((int)ans-10,(int)ans+10));
+        buttonB.setText(""+randomAns((int)ans-10,(int)ans+10));
+        buttonC.setText(""+randomAns((int)ans-10,(int)ans+10));
+        buttonD.setText(""+randomAns((int)ans-10,(int)ans+10));
+        actualAns = ans;
+
         if(ansnum == 1){
-            buttonA.setText("A. "+ans);
+            buttonA.setText(""+ans);
         }
         else if(ansnum == 2){
-            buttonB.setText("B. "+ans);
+            buttonB.setText(""+ans);
         }
         else if(ansnum == 3){
-            buttonC.setText("C. "+ans);
+            buttonC.setText(""+ans);
         }
         else if(ansnum == 4){
-            buttonD.setText("D. "+ans);
+            buttonD.setText(""+ans);
         }
     }
 
@@ -111,17 +115,45 @@ public class PracticeActivity extends AppCompatActivity {
     }
 
     public void buttonAans(View view){
+        if(checkAns(view)){
+            TotalCorrect++;
+        }
         if(countNum<12){
             countNum++;
             textViewNum.setText(""+countNum);
             CreateQuestion();
         }
         else if(countNum >= 12){
-            Intent intent = new Intent(this,MainActivity.class);
-            startActivityForResult(intent, REQUEST_MAIN_MENU);
+            Toast.makeText(this, "Total Correct " + TotalCorrect +" in " + " 12 Question", Toast.LENGTH_SHORT).show();
             finish();
         }
 
+    }
+
+    public boolean checkAns(View view){
+        String tempstr = "999999";
+        if (view.getId() == R.id.buttonA){
+            tempstr = buttonA.getText().toString();
+            selectAns = Float.parseFloat(tempstr);
+        }
+        else if (view.getId() == R.id.buttonB){
+            tempstr = buttonB.getText().toString();
+            selectAns = Float.parseFloat(tempstr);
+        }
+        else if (view.getId() == R.id.buttonC){
+            tempstr = buttonC.getText().toString();
+            selectAns = Float.parseFloat(tempstr);
+        }
+        else if (view.getId() == R.id.buttonD){
+            tempstr = buttonD.getText().toString();
+            selectAns = Float.parseFloat(tempstr);
+        }
+        if(selectAns == actualAns){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }

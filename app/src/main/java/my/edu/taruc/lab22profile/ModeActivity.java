@@ -21,6 +21,7 @@ public class ModeActivity extends AppCompatActivity {
         Intent intent = new Intent(this,PracticeActivity.class);
         intent.putExtras(bundle);
         startActivityForResult(intent, REQUEST_PRACTICE_MODE);
+        finish();
     }
 
     public void Additional(View view){

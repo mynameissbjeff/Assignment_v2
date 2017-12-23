@@ -20,7 +20,7 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".ModeActivity" />
         <activity android:name=".PracticeActivity" />
-        <activity android:name=".MultiplayerActivity"></activity>
+        <activity android:name=".ChallengeActivity"></activity>
     </application>
 
 </manifest>
